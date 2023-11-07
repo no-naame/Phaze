@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Phaze : Pricing</title>
+</head>
+<body>
+    <nav>
+        <div class="brand">PHAZE</div>
+        <div class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+          <div class="card float-left">
+              <h1>1BHK Plan</h1>
+              <p>
+                  Includes two rooms each containing:<br>
+                  <ul type=none class="devices">
+                      <li>Toggle Switch: 3</li>
+                      <li>Dimmer Switch: 2</li>
+                  </ul><br>
+                  And other smart devices based on customer demands.<br>
+                  Estimated Price: Rs. 1000
+              </p>
+          </div>
+          <div class="card float-right">
+            <h1>2BHK Plan</h1>
+            <p>
+                Includes three rooms each containing:<br>
+                <ul type=none class="devices">
+                    <li>Toggle Switch: 3</li>
+                    <li>Dimmer Switch: 2</li>
+                </ul><br>
+                And other smart devices based on customer demands.<br>
+                Estimated Price: Rs. 1000
+            </p>
+        </div>
+        <div class="card float-left" >
+            <h1>3BHK Plan</h1>
+            <p>
+                Includes three rooms each containing:<br>
+                <ul type=none class="devices">
+                    <li>Toggle Switch: 3</li>
+                    <li>Dimmer Switch: 2</li>
+                </ul><br>
+                And other smart devices based on customer demands.<br>
+                Estimated Price: Rs. 1000
+            </p>
+        </div>
+        <script>
+            function redirect_to_custom_pricing() {
+                window.location.replace("/customprice.html");
+            }
+        </script>
+        <center>
+        <button class="card button" name="customprice" onclick="redirect_to_custom_pricing()">Check Customized Prices
+        </button></center>
+      </main>
+</body>
+</html>

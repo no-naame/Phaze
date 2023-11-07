@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Phaze : Contact Us</title>
+  </head>
+  <body>
+    <nav>
+      <div class="brand">PHAZE</div>
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <form method="POST">
+        <div class="card float-left">
+          Enter email :<br />
+          <input type="email" name="email" id="email" autocomplet="off" required placeholder="Type your Email here"/>
+        </div>
+        <div class="card float-right">
+          Enter name :<br />
+          <input type="text" name="name" id="name" autocomplet="off" required placeholder="Type your Name here"/>
+        </div>
+        <div class="card float-left">
+          Enter Address :<br />
+          <input type="text" name="address" id="address" autocomplet="off" required placeholder="Type your Address here"/>
+        </div>
+        <div class="card float-right">
+          Enter Message :<br />
+          <textarea
+          placeholder="Type your Message here"
+            name="content"
+            id="content"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <center>
+          <input type="submit" value="Post" />
+        </center>
+        <!-- <div class="card button">
+          <button type="submit">Post</button>
+        </div> -->
+      </form>
+    </main>
+  </body>
+</html>

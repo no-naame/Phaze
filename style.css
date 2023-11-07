@@ -1,0 +1,371 @@
+@font-face {
+  font-family: 'TESLA Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('TESLA Regular'), url('TESLA.woff') format('woff');
+  }
+
+
+body {
+  background-color: black;
+  /* background: radial-gradient(black, rgb(30, 30, 30)); */
+  /* background: radial-gradient(rgb(30, 30, 30), black); */
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Cooper Black";
+  color: white;
+  text-shadow: 3px 3px 2px red, -3px -3px 2px blue;
+  transition: all 1s ease-in-out 0s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  font-family: 'TESLA Regular', 'Cooper Black';
+  /* font-weight: 500; */
+  color: red;
+  font-size: 4.5rem;
+  margin: 20px;
+  margin-left: 40px;
+  padding: 10px 35px;
+  text-shadow: -3px -3px 2px blue;
+  /* transform: scale(10); */
+}
+.navbar > ul > li {
+  display: inline-block;
+  margin: 20px 10px;
+  padding: 25px 15px;
+}
+.navbar > ul > li > a {
+  padding: 30px;
+  text-decoration: none;
+}
+.navbar > ul {
+  list-style-type: none;
+}
+
+.card {
+  /* background-color: rgb(40, 40, 40); */
+  background-color: black;
+  padding: 30px 80px 65px 80px;
+  margin: 20px 100px;
+  width: 43%;
+}
+.card > h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.card > p {
+  font-size: 1rem;
+}
+.devices {
+  padding-left: 10px;
+}
+.float-left {
+  text-align: left;
+  float: left;
+  padding-left: 20px;
+  box-shadow: -1px 1px 1px red, -1.7px 1.7px 1.7px blue;
+}
+
+.float-right {
+  text-align: right;
+  float: right;
+  padding-right: 20px;
+  box-shadow: 1px 1px 1px red, 1.7px 1.7px 1.7px blue;
+}
+
+.full-card {
+  background-color: black;
+  padding: 30px 80px 65px 80px;
+  margin: 20px 100px;
+  width: 43%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  min-height: 40vh;
+  width: 75%;
+  box-shadow: -1px 1px 1px red, -1.7px 1.7px 1.7px blue;
+  padding: 50px;
+}
+
+.success {
+  font-size: 4rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.room-card {
+  font-size: 1.3rem;
+  color: white;
+  width: 100%;
+  /* height: 60px; */
+  /* height: 20vh; */
+  height: min-content;
+  /* align-items: right; */
+  text-align: right;
+  box-shadow: 1px 1px 1px red, 1.7px 1.7px 1.7px blue;
+}
+
+input[type="Number"] {
+  width: 20%;
+  height: 100%;
+}
+
+label,
+input[type="Number"] {
+  margin: 10px 10px;
+  outline: none;
+  border: none;
+  background-color: black;
+}
+
+.device-count {
+  padding: 5px;
+  width: 20%;
+  font-size: 1.3rem;
+  box-shadow: -1px 1px 1px red, -1.7px 1.7px 1.7px blue;
+}
+
+.room-card:hover {
+  transform: scale(1.2);
+}
+.full-card:hover {
+  transform: scale(1.1);
+}
+.brand:hover {
+  transform: scale(1.2);
+  box-shadow: 1px 1px 1px red, 1.7px 1.7px 1.7px blue, -1px -1px 1px red,
+    -1.7px -1.7px 1.7px blue;
+}
+.navbar > ul > li > a:hover {
+  transform: scale(1);
+  box-shadow: 1px 1px 1px red, 1.7px 1.7px 1.7px blue, -1px -1px 1px red,
+    -1.7px -1.7px 1.7px blue;
+}
+
+.navbar > ul > li:hover{
+  transform: scale(1.2);
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+.card.button {
+  padding: 10px;
+  float: none;
+  align-self: center;
+  border: none;
+  box-shadow: 1px 1px 1px red, 1.7px 1.7px 1.7px blue, -1px -1px 1px red,
+    -1.7px -1.7px 1.7px blue;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="submit"] {
+  outline: none;
+  border: none;
+  background-color: black;
+  padding: 10px;
+  width: 80%;
+}
+input[type="submit"] {
+  box-shadow: 1px 1px 1px red, 1.7px 1.7px 1.7px blue, -1px -1px 1px red,
+    -1.7px -1.7px 1.7px blue;
+  padding: 10px;
+  margin: 30px;
+  width: 70%;
+}
+.float-left > input {
+  box-shadow: 1px 1px 1px red, 1.7px 1.7px 1.7px blue;
+}
+.float-right > input {
+  box-shadow: -1px 1px 1px red, -1.7px 1.7px 1.7px blue;
+}
+textarea {
+  outline: none;
+  border: none;
+  background-color: black;
+  padding: 10px;
+  width: 80%;
+  box-shadow: -1px 1px 1px red, -1.7px 1.7px 1.7px blue;
+}
+::-webkit-input-placeholder {
+  opacity: 0.5;
+  color: #fff;
+}
+
+::-moz-placeholder {
+  opacity: 0.5;
+  color: #fff;
+}
+
+button{
+  cursor: pointer;
+}
+
+::-ms-placeholder {
+  opacity: 0.5;
+  color: #fff;
+}
+
+::placeholder {
+  opacity: 0.5;
+  color: #fff;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  outline: none;
+  background-color: black;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 80%;
+  box-shadow: inset -1px 0px 1px red, inset -1.7px 0px 1.7px blue;
+  border: solid 4px black;
+  height: 20px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset -1px 0px 1px red, inset -1.7px 0px 1.7px blue; 
+} */
+
+input[type="submit"]:hover {
+  transform: scale(1.2);
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-size: 1rem;
+  -webkit-text-family: "Cooper Black";
+  /* -webkit-text-color: white; */
+  /* -webkit-font-color: white; */
+  -webkit-text-fill-color: white;
+  /* -webkit-box-shadow: inherit; */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .brand {
+    text-align: center;
+    width: 50%;
+  }
+  .success{
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .full-card {
+    padding: 30px;
+    grid-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  label,
+  input[type="Number"] {
+    font-size: 1.1rem;
+    margin: 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .full-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .full-card:hover {
+    transform: none;
+  }
+  .room-card:hover {
+    transform: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  label,
+  input[type="Number"] {
+    font-size: 1rem;
+    margin: 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .full-card {
+    margin: 20px 50px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .full-card {
+    margin: 20px 25px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  nav {
+    width: 110%;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    /* justify-content: space-around; */
+  }
+  nav > div > ul > li {
+    /* display: block; */
+    width: 70%;
+  }
+  nav > ul {
+    align-items: center;
+  }
+  .brand {
+    text-align: center;
+    display: block;
+    padding: 0px;
+    /* margin: 10px; */
+    margin: 0px;
+    margin-top: 40px;
+    width: 50%;
+  }
+  .navbar {
+    /* margin: 10px; */
+    align-items: center;
+    text-align: center;
+  }
+  .full-card {
+    grid-template-columns: 1fr;
+  }
+  .room-card {
+    text-align: center;
+  }
+}
